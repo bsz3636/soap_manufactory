@@ -1,0 +1,25 @@
+@import '../../../styles/settings.scss';
+
+@keyframes example {
+  0% { transform:translateX(0); padding-left:103%;}
+  100% { transform:translateX(-115%); padding-left:100%; }
+}
+
+.info {
+  position: relative;
+  width:100%;
+  background-color: $bcg-dark;
+  height: 40px;
+  overflow:hidden;
+  p {
+    
+    line-height: 40px;
+    font-size: 20px;
+    color:  $gold-brown-light;
+    white-space:nowrap;
+    animation-name: example;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}

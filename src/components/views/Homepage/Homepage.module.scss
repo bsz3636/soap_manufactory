@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  margin-top: 50px;
+}
+
+.inner {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  position:relative;   
+}
+
+.box {
+  flex: 0 0 33.333%;
+  position: relative;
+  padding: 0 15px;
+  a {
+    text-decoration: none;
+    color: rgb(62, 60, 55);
+    :hover{
+      color: $gold-brown-light;
+    }
+    .link_text {
+      font-size: 35px;
+    }
+  }
+  p {
+    font-size: $base-size;
+  }
+  .image_box {
+    height: 500px;
+  }
+}

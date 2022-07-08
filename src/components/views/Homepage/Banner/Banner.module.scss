@@ -1,0 +1,24 @@
+@import '../../../../styles/settings.scss';
+
+.item {
+position:relative;
+height: 650px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.caption {
+  position:absolute;
+  top: 10%;
+  left: 5%;
+}
+.text {
+  text-align: left;
+  line-height: 50px;
+  font-size: 37px;
+  text-shadow: $gold-brown;
+  text-shadow: 3px 3px 7px $dark-gray;
+  font-weight: bold;
+}
