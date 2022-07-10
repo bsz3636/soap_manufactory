@@ -4,7 +4,7 @@ import styles from './Info.module.scss';
 const Info = () => {
   return (
     <div className={styles.info}>
-      <p > Free Shipping orders over $40</p>
+      <p > Free Shipping on orders over 40 €</p>
     </div>
   );
 };

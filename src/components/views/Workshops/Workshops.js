@@ -1,13 +1,17 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPhone} from '@fortawesome/free-solid-svg-icons';
+
 import styles from './Workshops.module.scss';
 
 const Workshops = () => {
   return (
     <div className={styles.root}>
       <Container>
-      <div className={styles.left}>
-      <h3 className={styles.title}>Traditional Soap Making Workshops</h3>
+      <div>
+      <h2 className={styles.title}>Traditional Soap Making Workshops</h2>
       <p className={styles.text}>Have you ever wondered how to make natural bar soap? We'll show you! Find out how to make traditional bar soaps in our soap workshops.We invite you to a two-day soap workshop. Each participant works on their own equipment, which we provide. You don't need to bring anything with you except a good attitude. We provide safety and ingredients.</p>
       <h5>What you will learn in the course of practical classes:</h5>
       <ul className={styles.text}>
@@ -24,29 +28,35 @@ const Workshops = () => {
         <li>how to prepare herbs and other additives in soap</li>
       </ul>
       </div>
-      <div className={styles.right}>
+      <div className={styles.box}>
+        <div className={styles.wrap}>
+          <h4 className={styles.titleBox}>See what we're going to do:</h4>
+          <div>
+            <p className={styles.day}>- THE FIRST DAY</p>
+            <p className={styles.subtitle}>Soda Soap Making - Creative Techniques:</p>
+            <ul>
+              <li>you will learn the rules and principles of occupational health and safety for soap production and the basic ingredients</li>
+              <li>you will learn how to prevent the many "pitfalls" that may await you in this process</li>
+              <li>you will learn what the "trace" is about and why its type is important in soap making</li>
+              <li>you will learn advanced creative techniques that will allow you to make unique soaps that stand out in the crowd</li>
+              <li>you will learn how you can enrich your soap with additional, valuable ingredients (how to use the properties of herbs, milk, etc.)</li>
+              <li>you will learn to give natural colors to soaps you will learn which essential oils should be added to soap and which not</li>
+              <li>you will create soaps using two selected techniques according to our proven recipes (4 different to choose from). You decide what properties your soap should have</li>
+            </ul>
+            <p className={styles.day}>- DAY TWO</p>
+            <p className={styles.subtitle}>Secrets of creating soap recipes, taking works out of molds:</p>
+            <ul>
+              <li>you will learn the properties of oils and butters useful in the production of soap and you will find out why it is important in the soap production process</li>
+              <li>you will learn more about aging soap and learn to check its PH so that the soaps you make are safe to use</li>
+              <li>soap errors and their effects - it's worth knowing to avoid them</li>
+              <li>you will learn a very useful tool for creating your own soap recipes - the saponification calculator and you will learn how to use it</li>
+              <li>we will create a soap recipe for home use</li>
+              <li>take the soap out of the molds and cut your own handmade soap</li>
+            </ul>
+          </div>
+        </div>
         <div>
-          <p>See what we're going to do.
-Day One (Soda Soap Making - Creative Techniques):
-
-you will learn the rules and health and safety of soap making and the basic ingredients
-you will learn how to prevent numerous "pitfalls" that may await you in the process
-you will learn what the "trace" is about and why its type is important in making soap
-you will learn advanced creative techniques that will allow you to make unique soaps that stand out in the crowd
-you will learn how you can enrich your soap with additional, valuable ingredients (how to use the properties of herbs, milk, etc.)
-you will learn how to give natural colors to soaps
-you will learn which essential oils make sense to add to the soap and which do not
-you will create soaps with two selected techniques according to my proven recipes (4 different to choose from). You decide what properties your soap should have.
-Day two (secrets of creating soap recipes, taking works out of forms and joy 🙂)
-
-you will learn about the properties of oils and butters useful in making soap and find out why it is important in the soap making process
-you will learn more about the aging of soap and learn how to check its PH so that the soaps you make are safe to use
-soap making mistakes and their effects - it's worth knowing to avoid
-you will learn a very useful tool for creating your own soap recipes - the saponification calculator and learn how to use it
-we will create a soap recipe for use at home
-you will take the soap out of the molds and cut your own hand-made soap.
-You will take home approx. 1 kilogram of hand-made soap, a lot of useful knowledge and unique creative skills.
-The total price of the workshop is PLN 650. The workshops last 2 days (the first day - 6 hours, the second - 3 hours). Please note that the workshops are held in a small group of up to 4 people.</p>
+          <p className={styles.info}>You will take home approx. 1 kilogram of handmade soap, a lot of useful knowledge and exceptional creative abilities. The total price of the workshops is <strong>350 €</strong>. The workshops last 2 days (the first day - 6 hours, the second - 3 hours). Please be advised that the workshops are held in a small group of up to 4 people. Book a soap making workshop: <FontAwesomeIcon className={styles.icon} icon={faPhone} />555 555 555</p> 
         </div>
       </div>
       <div>

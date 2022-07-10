@@ -8,7 +8,7 @@ const Opinions = () => {
   return (
     <div className={styles.root}>
       <Container>
-        <h2>What our clients say:</h2>
+        <h2 className={styles.title}>What our clients say:</h2>
         <Carousel controls={false} touch={true}>
           <Carousel.Item className={styles.item}>
             <Stack direction="horizontal" className="h-100 justify-content-center align-items-center" gap={3}>

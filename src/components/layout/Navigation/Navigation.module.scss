@@ -47,10 +47,11 @@ nav {
 
     li a {
       color: black;
+      .active {
+        color: blue;
+      }
     }
-    .active {
-      color: blue;
-    }
+    
     li a:hover {
       color: $gold-brown-light;
     }

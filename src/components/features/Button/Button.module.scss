@@ -1,0 +1,29 @@
+@import '../../../styles/settings.scss';
+
+.btn {
+  position: relative;
+  left:50%;
+  transform: translatex(-50%);
+  margin: 5% 0;
+  background: $gold-brown;
+  border-radius: 7px;
+  border: 1px solid $gold-brown;
+  display: inline-block;
+  cursor: pointer;
+  color: $color-white;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 3px 35px;
+  text-decoration: none;
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+  &:hover {
+    background: $bcg-dark;
+    color: $gold-brown-light;
+  }
+  p {
+    margin: 8px 0;
+  }
+}

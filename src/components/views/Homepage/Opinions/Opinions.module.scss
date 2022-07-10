@@ -2,7 +2,9 @@
 
 .root {
   margin: 50px 0;
-  
+  .title {
+    font-style: italic;
+  }
 }
 .item {
   padding: 15px;

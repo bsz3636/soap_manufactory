@@ -29,8 +29,8 @@ const Navigation = () => {
 
           <nav role="navigation" className={styles.navigation}>
             <ul>
-              <li><a href="/" className={({ isActive }) => isActive? styles.active : styles.inActive}>Home</a></li>
-              <li><a href="/soaps" className={({ isActive }) => isActive? styles.active : styles.inActive}>Soaps</a>
+              <li><a href="/" className={({ isActive }) => isActive? styles.active : undefined}>Home</a></li>
+              <li><a href="/soaps" className={({ isActive }) => isActive? styles.active : undefined}>Soaps</a>
                 <ul>
                   <li><a href="/soaps/face" className={({ isActive }) => isActive? styles.active : styles.inActive}>Face Soaps</a></li>
                   <li><a href="/soaps/body" className={({ isActive }) => isActive? styles.active : styles.inActive}>Body Soaps</a></li>
@@ -39,7 +39,7 @@ const Navigation = () => {
                 </ul>
               </li>
               <li><a href="/about" className={({ isActive }) => isActive? styles.active : styles.inActive}>About</a></li>
-              <li><a href="/workshops" className={({ isActive }) => isActive? styles.active : styles.inActive}>Workshops</a></li>
+              <li><a href="/workshops" className={({ isActive }) => isActive? styles.active : undefined}>Workshops</a></li>
             </ul>
           </nav>
         </Container>
